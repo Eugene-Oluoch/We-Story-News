@@ -12,7 +12,7 @@ def configure_request(app):
     base_url = app.config['NEWS_API_BASE_URL']
     
     
-def get_all_news(sources="news-com-au,al-jazeera-english,associated-press,the-washington-post,the-hill,bbc-news,engadget,techcrunch", page_size=30):
+def get_all_news(sources="news-com-au,al-jazeera-english,associated-press,the-washington-post,the-hill,bbc-news,engadget,techcrunch", page_size=60):
     '''
     Function that gets the json response to our url request
     '''
@@ -70,7 +70,7 @@ def get_source_news_wp(sources="the-washington-post", page_size=30):
 
     return news_results
 
-def get_source_news_ap(sources="associated-press", page_size=30):
+def get_source_news_ap(sources="associated-press", page_size=60):
     '''
     Function that gets the json response to our url request
     '''
@@ -89,7 +89,7 @@ def get_source_news_ap(sources="associated-press", page_size=30):
 
     return news_results
 
-def get_source_news_nn(sources="news-com-au", page_size=30):
+def get_source_news_nn(sources="news-com-au", page_size=60):
     '''
     Function that gets the json response to our url request
     '''
