@@ -23,6 +23,6 @@ Repository link: [We-Story-News](https://github.com/Eugene-Oluoch/We-Story-News)
 2. User can see the latest trending news
 3. User can navigate to the original location of the news.
 ## Author Info
-*Author: Eugene Mark Oluoch
-*Career: FullStack Developer
-*Twitter: [Twitter](https://twitter.com/crabs_ke)
+# Author: Eugene Mark Oluoch
+# Career: FullStack Developer
+# Twitter: [Twitter](https://twitter.com/crabs_ke)
