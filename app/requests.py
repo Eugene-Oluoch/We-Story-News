@@ -13,9 +13,7 @@ def configure_request(app):
     
     
 def get_all_news(sources="news-com-au,al-jazeera-english,associated-press,the-washington-post,the-hill,bbc-news,engadget,techcrunch", page_size=60):
-    '''
-    Function that gets the json response to our url request
-    '''
+
     get_news_url = '{}/everything?language=en&pageSize={}&sources={}&apiKey={}'.format(base_url,page_size,sources, api_key)
 
     with urllib.request.urlopen(get_news_url) as url:
@@ -33,9 +31,7 @@ def get_all_news(sources="news-com-au,al-jazeera-english,associated-press,the-wa
 
 
 def get_source_news_al(sources="al-jazeera-english", page_size=30):
-    '''
-    Function that gets the json response to our url request
-    '''
+
     get_news_url = '{}/everything?language=en&pageSize={}&sources={}&apiKey={}'.format(base_url,page_size,sources, api_key)
 
     with urllib.request.urlopen(get_news_url) as url:
@@ -52,9 +48,7 @@ def get_source_news_al(sources="al-jazeera-english", page_size=30):
     return news_results
 
 def get_source_news_wp(sources="the-washington-post", page_size=30):
-    '''
-    Function that gets the json response to our url request
-    '''
+
     get_news_url = '{}/everything?language=en&pageSize={}&sources={}&apiKey={}'.format(base_url,page_size,sources, api_key)
 
     with urllib.request.urlopen(get_news_url) as url:
@@ -71,9 +65,7 @@ def get_source_news_wp(sources="the-washington-post", page_size=30):
     return news_results
 
 def get_source_news_ap(sources="associated-press", page_size=60):
-    '''
-    Function that gets the json response to our url request
-    '''
+
     get_news_url = '{}/everything?language=en&pageSize={}&sources={}&apiKey={}'.format(base_url,page_size,sources, api_key)
 
     with urllib.request.urlopen(get_news_url) as url:
@@ -90,9 +82,7 @@ def get_source_news_ap(sources="associated-press", page_size=60):
     return news_results
 
 def get_source_news_nn(sources="news-com-au", page_size=60):
-    '''
-    Function that gets the json response to our url request
-    '''
+
     get_news_url = '{}/everything?language=en&pageSize={}&sources={}&apiKey={}'.format(base_url,page_size,sources, api_key)
 
     with urllib.request.urlopen(get_news_url) as url:
@@ -110,15 +100,7 @@ def get_source_news_nn(sources="news-com-au", page_size=60):
 
 
 def process_results(news_list):
-    '''
-    Function  that processes the movie result and transform them to a list of Objects
 
-    Args:
-        movie_list: A list of dictionaries that contain movie details
-
-    Returns :
-        movie_results: A list of movie objects
-    '''
     news_results = []
     for news_item in news_list:
         author = news_item.get('author')
