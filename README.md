@@ -3,7 +3,7 @@ We Story News is a web app that allows displays current trending news from diffe
 
 
 ### Screenshot
-![ScreenShot](https://github.com/Eugene-Oluoch/We-Story-News/)
+![ScreenShot](https://github.com/Eugene-Oluoch/We-Story-News/blob/master/app/static/images/westory.png)
 ## LIVE DEMO
 [live](https://westorynews.herokuapp.com/)
 ## Get Started
