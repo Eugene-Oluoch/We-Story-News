@@ -15,8 +15,8 @@ Repository link: [We-Story-News](https://github.com/Eugene-Oluoch/We-Story-News)
 * Flask.
 * HTML for structure.
 * Css for custom styles.
-* Python.
 * Javascript.
+* Python.
 ### BDD
 * Objectives
 1. Users can choose what sources do they want to get the news from
