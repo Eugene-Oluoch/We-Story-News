@@ -1,0 +1,48 @@
+{% extends 'base.html' %} {% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"> {% endblock %} {% block content %}
+<main class="main">
+
+    <section class="main-news">
+        <article style='background-image:linear-gradient(hsla(0, 0%, 0%,0.3), hsla(0, 0%, 0%,0.3)),url({{ news[0].urlToImage }}); background-position:top;background-size:cover;'>
+            <div>
+                <h1>{{ news[0].title }}</h1>
+                <p>{{ news[0].description }}</p>
+                <p>{{ news[0].publishedAt }}</p>
+            </div>
+        </article>
+    </section>
+    <section class="main-news-site">
+        <article class='nn'>
+            <a href="{{ url_for('main.nn') }}"><img src="{{ url_for('static',filename='images/Newscomau.png') }}" alt=""></a>
+        </article>
+        <article class='wp'>
+            <a href="{{ url_for('main.wp') }}"><img src="{{ url_for('static',filename='images/wp.png') }}" alt=""></a>
+        </article>
+        <article class='ap'>
+            <a href="{{ url_for('main.ap') }}"><img src="{{ url_for('static',filename='images/ap.png') }}" alt=""></a>
+        </article>
+        <article class='al'>
+            <a href="{{ url_for('main.ajazeer') }}"><img src="{{ url_for('static',filename='images/al.png') }}" alt=""></a>
+        </article>
+    </section>
+    <section class="main-sub-title">
+        <h1>All Stories</h1>
+    </section>
+    <section class="main-sub-news">
+        <ul>
+            {% for new in news %}
+            <li>
+                <div class="li-image">
+                    <img src="{{ new.urlToImage }}" alt="">
+                </div>
+                <div class="li-desc">
+                    <h3><a href="{{ new.url }}" target="_blank">{{ new.title }}</a></h3>
+                    <p>{{ new.description }}</p>
+                    <p>{{ new.publishedAt }}</p>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+</main>
+{% endblock %}

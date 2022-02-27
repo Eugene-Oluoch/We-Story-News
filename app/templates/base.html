@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" href="{{ url_for('static', filename='images/mic.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nav.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+
+    <title>We Story News | Coding Journey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> {% block head %} {% endblock %}
+</head>
+
+<body>
+    <header class="header">
+        <!--NavBar-->
+        <nav class="nav">
+            <section>
+                <article class="nav-logo">
+                    <div class="nav-logo-image">
+                        <div class="nav-logo-image-img">
+                            <a href="{{ url_for('main.home') }}"><img src="{{ url_for('static',filename='images/logo.png') }}" alt="world-news icon"></a>
+                        </div>
+                        <div class="nav-logo-image-company">
+                            <a href="{{ url_for('main.home') }}">We Story</a>
+                        </div>
+                    </div>
+                    <div class="nav-logo-hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </article>
+                <article class="nav-links" id="menu">
+                    <ul class="nav-links-ul">
+                        <li><a href="https://www.aljazeera.com/" target="_blank">AlJazeera</a></li>
+                        <li><a href="https://www.washingtonpost.com/" target="_blank">Washington-post</a></li>
+                        <li><a href="https://apnews.com/" target="_blank">Associated press</a></li>
+                    </ul>
+                </article>
+                <article class="nav-links2" id="menu2">
+                    <ul class="nav-links2-ul">
+                        <li><a href="https://www.aljazeera.com/" target="_blank">AlJazeera</a></li>
+                        <li><a href="https://www.washingtonpost.com/" target="_blank">Washington-post</a></li>
+                        <li><a href="https://apnews.com/" target="_blank">Associated press</a></li>
+                    </ul>
+                </article>
+            </section>
+        </nav>
+    </header>
+    {% block content %} {% endblock %}
+    <footer class="footer-main">
+        <section class="footer">
+            <article class="footer-logo-image">
+                <div class="footer-logo-image-img">
+                    <img src="{{url_for('static',filename='images/logo.png')}}" alt="world-news icon">
+                </div>
+                <div class="footer-logo-image-company">
+                    We Story
+                </div>
+            </article>
+            <article class="footer-copyright">
+                <h3>&copy 2022 copyright. All reserved</h3>
+            </article>
+        </section>
+    </footer>
+
+    <script src="{{ url_for('static',filename='js/nav.js') }}"></script>
+</body>
+
+</html>

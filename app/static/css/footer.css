@@ -1,0 +1,44 @@
+.footer-main {
+    padding: .5rem .5rem;
+    max-width: 1440px;
+    background-color: white;
+    margin-inline: auto;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer {
+    padding: 0 1rem;
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo-image {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo-image-img img {
+    height: 2rem;
+}
+
+.footer-logo-image-company {
+    padding-left: .5rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.footer-copyright h3 {
+    font-size: 1rem;
+}
+
+@media (min-width:468px) {
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

@@ -1,0 +1,31 @@
+section {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article h1 {
+    font-size: 3rem;
+}
+
+article a {
+    margin-block: 1rem;
+    width: 100px;
+    margin-inline: auto;
+    display: block;
+    padding: .5rem 1rem;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+article a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s ease-in-out;
+}

@@ -1,0 +1,136 @@
+.main-news-site {
+    margin-top: 1rem;
+    max-width: 1200px;
+    width: 90vw;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nn img,
+.wp img,
+.ap img {
+    height: 2rem;
+}
+
+.al img {
+    height: 3rem;
+}
+
+.main-news {
+    margin-top: 3rem;
+}
+
+.main-news article {
+    position: relative;
+    box-shadow: 0 0 .2rem .2rem hsl(0, 0%, 90%);
+    width: 90vw;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-block: 1rem;
+    height: 25rem;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-news article div {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: .5rem;
+}
+
+.main-news article h1 {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 900;
+    width: 90vw;
+    max-width: 600px;
+}
+
+.main-news article p {
+    padding: .5rem 0;
+}
+
+.main-sub-title h1 {
+    padding: 1rem .5rem;
+    width: 80vw;
+    font-family: 'Inter', sans-serif;
+    max-width: 1200px;
+    margin-inline: auto;
+    color: #272727;
+    font-weight: 900;
+}
+
+.main-sub-news ul li {
+    width: 90vw;
+    margin-inline: auto;
+    margin-block: 1rem;
+    border-radius: .5rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.li-image {
+    border-radius: .5rem;
+}
+
+.li-image img {
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.li-desc {
+    padding: .5rem .5rem;
+}
+
+.li-desc h3 a {
+    transition: 0.3s ease-in-out;
+}
+
+.li-desc h3 a:hover {
+    transition: 0.3s ease-in-out;
+    color: #62B3EE;
+}
+
+.li-desc p {
+    font-size: .8rem;
+    padding: .5rem 0;
+}
+
+@media (min-width:568px) {
+    .main-news-site {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width:1000px) {
+    .main-sub-news ul {
+        margin-inline: .5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: .5rem;
+    }
+    .main-sub-news ul li {
+        width: 100%;
+    }
+}
+
+@media (min-width:1200px) {
+    .main-sub-news {
+        max-width: 1200px;
+        margin-inline: auto;
+    }
+    .main-sub-news ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: .5rem;
+    }
+    .main-sub-news ul li {
+        width: 100%;
+    }
+}
