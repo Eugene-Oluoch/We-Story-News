@@ -25,4 +25,4 @@ Repository link: [We-Story-News](https://github.com/Eugene-Oluoch/We-Story-News)
 ## Author Info
 ### Author: Eugene Mark Oluoch
 ### Career: FullStack Developer
-### Twitter: [Twitter](https://twitter.com/crabs_ke)
+### Twitter: [@crabs_ke](https://twitter.com/crabs_ke)
